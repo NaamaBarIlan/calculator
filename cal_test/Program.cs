@@ -40,6 +40,9 @@ namespace cal_test
 
             Console.Write("Your result is: ");
             Calculation(mathOperator, firstNumber, secondNumber);
+
+            //TODO - add the option of calculating more numbers
+            //TODO - add more math operators 
         }
 
        
