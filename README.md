@@ -1,3 +1,3 @@
 # calculator
 
-An calculator application in c#.
+A calculator application in c#.
