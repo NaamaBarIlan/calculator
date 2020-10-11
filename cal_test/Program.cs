@@ -9,7 +9,7 @@ namespace cal_test
             // Ask the user to enter a 1st number:
             Console.WriteLine("Welcome to the coolest Calculator. Please enter your first number: ");
 
-            //TODO - add data validation to make sure we got a valid number as input? 
+            //TODO - add data validation
 
             //Convert input from string to int and store in a variable:
             double firstNumber = Convert.ToInt32(Console.ReadLine());
@@ -35,9 +35,7 @@ namespace cal_test
             // Display the math expression:
             Console.WriteLine($"You entered {firstNumber} {mathOperator} {secondNumber}");
 
-            // Perform the calculation (a method outside of Main)
-            // & output the result to the user:
-
+            // Perform the calculation and output the result
             Console.Write("Your result is: ");
             Calculation(mathOperator, firstNumber, secondNumber);
 
