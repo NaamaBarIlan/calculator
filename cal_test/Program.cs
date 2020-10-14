@@ -12,7 +12,7 @@ namespace cal_test
         /// <param name="args">Default Main method</param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the coolest Calculator. Please enter your first number: ");
+            Console.WriteLine("Welcome to the C# Calculator. Please enter your first number: ");
 
             //TODO - add data validation
 
@@ -41,7 +41,6 @@ namespace cal_test
             Calculation(mathOperator, firstNumber, secondNumber);
 
             //TODO - add the option of calculating more numbers
-            //TODO - add more math operators 
         }
 
        
@@ -53,30 +52,33 @@ namespace cal_test
         /// <param name="secondNumber">The second double number to be used in the calculation</param>
         static void Calculation(string mathOperator, double firstNumber, double secondNumber)
         {
-            if (mathOperator == "+")
+            switch (mathOperator)
             {
-                Console.WriteLine(firstNumber + secondNumber);
-            } 
-            else if (mathOperator == "-")
-            {
-                Console.WriteLine(firstNumber - secondNumber);
+                case "+":
+                    Console.WriteLine(firstNumber + secondNumber);
+                    break;
+
+                case "-":
+                    Console.WriteLine(firstNumber - secondNumber);
+                    break;
+
+                case "*":
+                    Console.WriteLine(firstNumber * secondNumber);
+                    break;
+
+                case "/":
+                    Console.WriteLine(firstNumber / secondNumber);
+                    break;
+
+                case "%":
+                    Console.WriteLine(firstNumber % secondNumber);
+                    break;
+
+                default:
+                    Console.WriteLine($"{mathOperator} is not a valid math operator. Please try again.");
+                    break;
             }
-            else if (mathOperator == "*")
-            {
-                Console.WriteLine(firstNumber * secondNumber);
-            }
-            else if (mathOperator == "/")
-            {
-                Console.WriteLine(firstNumber / secondNumber);
-            }
-            else if(mathOperator == "%")
-            {
-                Console.WriteLine(firstNumber % secondNumber);
-            }
-            else
-            {
-                Console.WriteLine($"{mathOperator} is not a valid math operator. Please try again.");
-            }
+
         }
         
     }
