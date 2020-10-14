@@ -4,9 +4,14 @@ namespace cal_test
 {
     class Program
     {
+        /// <summary>
+        /// Requests the user for input
+        /// passes that input into the calculation method
+        /// and outputs the result of the calculation to the console. 
+        /// </summary>
+        /// <param name="args">Default Main method</param>
         static void Main(string[] args)
         {
-            // Ask the user to enter a 1st number:
             Console.WriteLine("Welcome to the coolest Calculator. Please enter your first number: ");
 
             //TODO - add data validation
@@ -16,7 +21,6 @@ namespace cal_test
             
             Console.Clear();
 
-            // Ask the user to enter a math operator:
             Console.WriteLine("Please enter a math operator ( +, -, *, /, % ): ");
 
             // Store math operator as a string
@@ -24,7 +28,6 @@ namespace cal_test
 
             Console.Clear();
 
-            // Ask the user to enter a second number
             Console.WriteLine("Please enter your second number: ");
 
             //Convert input from string to int and store in a variable:
@@ -32,10 +35,8 @@ namespace cal_test
 
             Console.Clear();
 
-            // Display the math expression:
             Console.WriteLine($"You entered {firstNumber} {mathOperator} {secondNumber}");
 
-            // Perform the calculation and output the result
             Console.Write("Your result is: ");
             Calculation(mathOperator, firstNumber, secondNumber);
 
@@ -44,6 +45,12 @@ namespace cal_test
         }
 
        
+        /// <summary>
+        /// Performs a math calculation based on the two double numbers and math operator passed as parameters.
+        /// </summary>
+        /// <param name="mathOperator">The math operator to be executed in the calculation</param>
+        /// <param name="firstNumber">The first double number to be used in the calculation</param>
+        /// <param name="secondNumber">The second double number to be used in the calculation</param>
         static void Calculation(string mathOperator, double firstNumber, double secondNumber)
         {
             if (mathOperator == "+")
