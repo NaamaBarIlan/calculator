@@ -43,7 +43,7 @@ Then select and open ```cal_test.sln```
 
 ### Change Log
 
-1.2: *Refactored the method, updates to the notes and README * - 13 Oct 2020  
+1.2: *Refactored the method, updates to the notes and README* - 13 Oct 2020  
 1.1: *Initial project set up* - 26 Jun 2020  
 
 ------------------------------
